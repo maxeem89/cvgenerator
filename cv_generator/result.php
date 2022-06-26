@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 $_SESSION['error'] = null;
 $messege_error = Array();
 $pieces =Array();
@@ -15,7 +14,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $_SESSION['error'] = $messege_error;
     header("Location: " . $_SERVER['HTTP_REFERER']);
 }
-var_dump($_GET);
 if(empty($_Get['skills'])!=false)  {
                              
 $pieces = explode(",",$_GET['skills']);
@@ -86,15 +84,10 @@ $pieces = explode(",",$_GET['skills']);
                         <ul>
                             <li class="mt-5">
                                 <h5><?php echo $_GET['start_date'] . "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . $_GET['end_date'] ?></h5>
-                                <h4>Bachalor Degree in Software Engineering (91.2 %)</h4>
-                                <h4>Jadara University</h4>
+                                <h4><?php echo $_GET['major']?></h4>
+                                <h4><?php echo $_GET['univarsity']?></h4>
                             </li>
-                            <li class="mt-4">
-                                <h5>2006 - 2007</h5>
-                                <h4>High School Scientific Dep. 75.6% </h4>
-
-                            </li>
-                        </ul>
+                        </ul> 
                     </div>
                     <div class="mt-5 contactInfo language">
                         <h3 class="text-uppercase mb-4 title">Languages</h3>
@@ -118,10 +111,7 @@ $pieces = explode(",",$_GET['skills']);
                     <div class="col mt-3">
                         <h2 class="mb-1 text-uppercase title2">profile</h2>
                         <p>
-                            I have more than 1 year of experience in the IT field in development.
-                            I worked in many projects with many roles as developer with excellent
-                            experience in many fields like assets tracking system, E-commerce
-                            system, ERP/CRM
+                            <?php echo $_GET['profile']; ?>
                         </p>
 
                         <div class=" about">
