@@ -80,6 +80,16 @@ session_start();
                                         <div class="form-group">
                                             <input type="text" minlength="10" maxlength="10" name="phone" class="form-control" placeholder="Your Phone *" value="" name="phoe" />
                                         </div>
+                                        <label > languges</label>
+                                        <div class="form-group">
+                                     
+                                <select name='subject[]' multiple size=6>
+                                    <option value='english'>ENGLISH</option>
+                                    <option value='arabic'>Arabic</option>
+                                    <option value='hindi'>HINDI</option>
+                                </select>
+                            </div>
+                            
 
                         </section>
                         <section id="section_edu" class="mx-5">
@@ -87,27 +97,26 @@ session_start();
 
                             <div class="form-group ">
 
-                            
+
                                 <input id="p_s_date " type="date" class="w-50 my-3" name="start_date">
                                 <input id="p_e_date " type="date" class="w-40 my-3" name="end_date">
                                 <input type="text " class="m-3" placeholder="enter your Uinvarsity" name="univarsity"> 
                                 <input type="text "class="my-3" placeholder="enter your Major" name="major"> 
                             </div>
                             <label for=""> languges</label>
-                            <div class="form-group">
-
-                                <select name='subject[]' multiple size=6>
-                                    <option value='english'>ENGLISH</option>
-                                    <option value='arabic'>Arabic</option>
-                                    <option value='hindi'>HINDI</option>
-                                </select>
-                            </div>
+                            
                             <label for=""> skills please write (,) between your skills*  </label>
                             <div class="form-group ">
                           
                                 <textarea  rows="4" cols="50" class="w-50" placeholder="skills" name="skills">
                                 </textarea>
                             </div>
+                            <label for=""> add paragraph to your profile  </label>
+                            <div class="form-group ">
+                          
+                          <textarea  rows="4" cols="50" class="w-50" placeholder="skills" name="profile">
+                          </textarea>
+                      </div>
                             <button type="submit" class="btn btn-primary d-flex jusitfy-content-end ">submit
 
                         </section>
