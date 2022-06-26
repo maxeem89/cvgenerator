@@ -84,8 +84,10 @@ session_start();
                         </section>
                         <section id="section_edu" class="mx-5">
                             <label for="p-s-date"> Education Date</label>
-                            
+
                             <div class="form-group ">
+
+                            
                                 <input id="p_s_date " type="date" class="w-50 my-3" name="start_date">
                                 <input id="p_e_date " type="date" class="w-40 my-3" name="end_date">
                                 <input type="text " class="m-3" placeholder="enter your Uinvarsity" name="univarsity"> 
