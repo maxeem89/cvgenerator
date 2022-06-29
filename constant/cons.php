@@ -1,4 +1,5 @@
 <?php
+const BASE_URL = 'http://servertest.htudemo/htu_courses/';
 define('USERS', Array(
     
     [
