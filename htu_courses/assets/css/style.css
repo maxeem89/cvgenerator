@@ -1,0 +1,25 @@
+.main_page{
+    display: flex;
+    height: 85vh;
+    background-image: url(../../assets/images/main_bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+    
+.navbar {
+position: relative;
+}
+
+.details_courses_page{
+    display: block;
+  
+}
+.htu_detalis{
+    height: 82vh;
+}
+footer{
+   position: fixed;
+}
